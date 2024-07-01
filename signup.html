@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paylink - Money Transfer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('paytm/6049547.jpg') no-repeat center center fixed, linear-gradient(135deg, #6B0F9C 0%, #8E2DE2 100%);
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .input {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+    }
+    .input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="card w-96 p-10 text-center text-white">
+    <h1 class="text-2xl text-blue-600 font-extrabold  mb-4 ">Welcome to PayLink</h1>
+    <p class="mb-6 text-white">Transfer money quickly and securely with Paylink.</p>
+    <input type="text" placeholder="USER NAME" class="input w-full p-3 mb-4 rounded-lg focus:outline-none">
+    <input type="password" placeholder="PASSWORD" class="input w-full p-3 mb-6 rounded-lg focus:outline-none">
+    <button class="btn bg-gradient-to-r from-purple-600 to-blue-600 text-white w-full py-3 rounded-lg border-none font-semibold hover:from-purple-700 hover:to-blue-700">SIGN IN</button>
+    <div class="flex justify-between items-center mt-6">
+      <a href="#" class="text-sm hover:underline text-white">Sign up now!</a>
+      <div class="text-sm text-white">or</div>
+      <div class="flex space-x-2">
+        <a href="#" class="text-sm hover:underline"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-sm hover:underline"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-sm hover:underline"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paylink - Money Transfer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-font {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .bg-gradient-custom {
+      background: linear-gradient(to right, #E0C3FC, #8EC5FC);
+    }
+
+    .text-shadow {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bg-custom {
+      background: linear-gradient(to right, #5C2D91, #9C27B0);
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .slide-in-left {
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .slide-in-right {
+      animation: slideInRight 1s ease-out;
+    }
+
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      from { transform: translateX(50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-7px);
+      }
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #5C2D91, #9C27B0);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a:hover {
+      text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-custom min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="navbar flex justify-between items-center p-4 md:p-6 navbar-font">
+    <div class="text-xl md:text-2xl font-bold text-shadow text-white bounce">
+      Paylink
+      <h2 class="text-sm md:text-xl text-purple-200 mb-0">Secure and Fast</h2>
+    </div>
+    <div class="flex space-x-4 md:space-x-8 text-white">
+      <a href="#" class="hover:underline text-base md:text-lg flex items-center"><i class="fas fa-home mr-2"></i>Home</a>
+      <a href="#" class="hover:underline text-base md:text-lg flex items-center"><i class="fas fa-info-circle mr-2"></i>About</a>
+      <a href="#" class="hover:underline text-base md:text-lg flex items-center"><i class="fas fa-cogs mr-2"></i>Services</a>
+      <a href="#" class="hover:underline text-base md:text-lg flex items-center"><i class="fas fa-envelope mr-2"></i>Contact</a>
+      <a href="#" class="hover:underline text-base md:text-lg flex items-center border border-white px-2 md:px-4 py-1 md:py-2 rounded-full"><i class="fas fa-user-plus mr-2"></i>Sign up</a>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="flex-grow container mx-auto px-4 md:px-6 py-10 md:py-20 flex flex-col-reverse lg:flex-row items-center justify-center gap-8">
+    <div class="lg:w-1/2 bg-white p-6 md:p-10 rounded-lg shadow-lg mb-8 lg:mb-0 slide-in-left lg:slide-in-right">
+      <h2 class="text-lg md:text-xl text-purple-600 mb-4">Secure and Fast</h2>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gradient">Why Choose Paylink?</h1>
+      <p class="text-base md:text-lg mb-8 leading-relaxed">
+        Transfer money quickly and securely to anyone, anywhere. With Paylink, your transactions are fast, secure, and easy to manage.
+      </p>
+      <a href="#" class="bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg text-base md:text-lg font-semibold hover:bg-purple-700 shadow-lg transform hover:scale-105 transition-transform duration-300">Get started</a>
+    </div>
+    <div class="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+      <img src="paytm/5179450-removebg.png" alt="Money Transfer Illustration" class="w-1/2 md:w-2/3 lg:w-full h-auto rounded-lg shadow-lg fade-in">
+    </div>
+  </div>
+</body>
+</html>

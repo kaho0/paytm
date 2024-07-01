@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paylink - Money Transfer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-gradient-custom {
+      background: linear-gradient(to right, #E0C3FC, #8EC5FC);
+    }
+    .text-shadow {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .text-gradient {
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-custom {
+      background: linear-gradient(to right, #5C2D91, #9C27B0);
+    }
+  </style>
+</head>
+<body class="bg-custom min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6">
+    <div class="text-2xl font-bold text-shadow text-white">Paylink</div>
+    <div class="flex space-x-8 text-white">
+      <a href="#" class="hover:underline text-lg">Home</a>
+      <a href="#" class="hover:underline text-lg">About</a>
+      <a href="#" class="hover:underline text-lg">Services</a>
+      <a href="#" class="hover:underline text-lg">Contact</a>
+      <a href="#" class="hover:underline text-lg ">Sign up</a>
+    </div>
+  </nav>
+  
+  <!-- Main Section -->
+  <div class="flex-grow container mx-auto px-6 py-20 flex flex-col-reverse lg:flex-row items-center justify-center">
+    
+    <div class="lg:w-1/2 bg-white p-10 rounded-lg shadow-lg  lg:mb-0">
+      <h2 class="text-xl text-purple-600 mb-4">Secure and Fast</h2>
+      <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gradient">Why Choose Paylink?</h1>
+      <p class="text-lg mb-8 leading-relaxed">
+        Transfer money quickly and securely to anyone, anywhere. With Paylink, your transactions are fast, secure, and easy to manage.
+      </p>
+      <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 shadow-lg transform hover:scale-105 transition-transform duration-300">Get started</a>
+    </div>
+    <div class="lg:w-1/2 flex justify-center items-center">
+        <img src="paytm/5179450-removebg.png" alt="Money Transfer Illustration" class="w-2/3 lg:w-full h-auto rounded-lg shadow-lg">
+      </div>
+  </div>
+</body>
+</html>
